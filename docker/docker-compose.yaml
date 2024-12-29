@@ -1,0 +1,33 @@
+services:
+  db:
+    image: mariadb:10.4
+    container_name: openeyes-db2
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: openeyes
+      MYSQL_USER: openeyes
+      MYSQL_PASSWORD: openeyes
+    volumes:
+      - ./initdb.sql:/docker-entrypoint-initdb.d/initdb.sql
+
+  openeyes:
+    image: 6.8a2
+    ports:
+      - "8080:80"
+    volumes:
+      - ./.htaccess:/var/www/openeyes/.htaccess
+      - ./db.conf:/etc/openeyes/db.conf
+    depends_on:
+      - db
+    command: |
+      sh -c '
+      cd /var/www/openeyes/protected &&
+      chmod +x yiic &&
+      until mysql -h db -u root -proot openeyes -e "SELECT 1" > /dev/null 2>&1; do
+        echo "Waiting for database connection..." &&
+        sleep 5
+      done &&
+      php yiic migrate --interactive=0 &&
+      php yiic migratemodules --interactive=0 &&
+      /usr/sbin/apache2ctl -D FOREGROUND
+      '
