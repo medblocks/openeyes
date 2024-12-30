@@ -2,21 +2,23 @@ services:
   db:
     image: mariadb:10.4
     container_name: openeyes-db2
+    ports:
+      - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: openeyes
       MYSQL_USER: openeyes
       MYSQL_PASSWORD: openeyes
-    volumes:
-      - ./initdb.sql:/docker-entrypoint-initdb.d/initdb.sql
+    # volumes:
+    #   - ./initdb.sql:/docker-entrypoint-initdb.d/initdb.sql
 
   openeyes:
-    image: 6.8a2
+    image: master1
     ports:
       - "8080:80"
     volumes:
-      - ./.htaccess:/var/www/openeyes/.htaccess
       - ./db.conf:/etc/openeyes/db.conf
+      - ./apache2.conf:/etc/apache2/sites-available/000-default.conf
     depends_on:
       - db
     command: |
@@ -27,7 +29,6 @@ services:
         echo "Waiting for database connection..." &&
         sleep 5
       done &&
-      php yiic migrate --interactive=0 &&
-      php yiic migratemodules --interactive=0 &&
+      /var/www/openeyes/protected/yiic migrate --all --interactive=0 || true &&
       /usr/sbin/apache2ctl -D FOREGROUND
       '

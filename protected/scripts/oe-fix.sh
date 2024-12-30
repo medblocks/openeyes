@@ -255,7 +255,14 @@ fi
 
 # Fix permissions
 if [ $noperms = 0 ]; then
-    sudo gpasswd -a "$curuser" www-data # add current user to www-data group
+
+    # Do the sudo only if env DOCKER_CONTAINER=FALSE
+    if [ "$DOCKER_CONTAINER" != "TRUE" ]; then
+        chown -R $curuser:www-data $WROOT 2>/dev/null || :
+    else
+        sudo chown -R $curuser:www-data $WROOT 2>/dev/null || :
+    fi
+
 
     if [ -f /init_scripts/50-create-folders.sh ]; then
         bash /init_scripts/50-create-folders.sh

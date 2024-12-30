@@ -1,16 +1,17 @@
 <?php
 
+<?php
 class m220822_083000_convert_contact_new_format extends OEMigration
 {
     public function safeUp()
     {
         $this->dbConnection->createCommand("
-        INSERT INTO address (contact_id, address_type_id , address1, address2, city, postcode, county, country_id)
-        SELECT c.id AS 'contact_id', a.address_type_id, s.name AS address1, IF(a.address2 IS NULL OR a.address2='', a.address1, CONCAT(a.address1 , ', ', a.address2)) AS address2 , a.city, a.postcode , a.county , a.country_id
-        FROM contact c 
+        INSERT INTO address (contact_id, address_type_id , address1, address2, city, postcode, county, country_id, date_start)
+        SELECT c.id AS 'contact_id', a.address_type_id, s.name AS address1, IF(a.address2 IS NULL OR a.address2='', a.address1, CONCAT(a.address1 , ', ', a.address2)) AS address2 , a.city, a.postcode , a.county , a.country_id, IFNULL(a.date_start, NOW())
+        FROM contact c
             INNER JOIN contact_location cl ON cl.contact_id = c.id
-            INNER JOIN site s ON s.id = cl.site_id 
-            INNER JOIN address a ON a.contact_id = s.contact_id 
+            INNER JOIN site s ON s.id = cl.site_id
+            INNER JOIN address a ON a.contact_id = s.contact_id
         WHERE c.id NOT IN (SELECT contact_id from address)
             AND a.date_end is NULL
         GROUP BY c.id
