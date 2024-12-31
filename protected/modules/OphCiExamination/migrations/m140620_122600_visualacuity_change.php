@@ -26,7 +26,7 @@ class m140620_122600_visualacuity_change extends OEMigration
                 'name' => 'Visual Function',
                 //'parent_element_type_id' => 'OEModule\OphCiExamination\models\Element_OphCiExamination_VisualAcuity',
                 'display_order' => 10,
-                'required' => false,
+                'required' => 0,
             )), $event_type_id);
 
         $this->createOETable('et_ophciexamination_visualfunction', array(

@@ -28,7 +28,7 @@ class m210913_122220_add_new_consent_element extends OEMigration
         $this->createElementType("OphCoCvi", "Consent", [
             'class_name' => 'OEModule\\OphCoCvi\\models\\Element_OphCoCvi_Consent',
             'default' => true,
-            'required' => true,
+            'required' => 1,
             'display_order' => 20
         ]);
 

@@ -9,7 +9,7 @@ class m140507_094523_colour_vision_element extends OEMigration
                                 'name' => 'Colour Vision',
                                 'parent_element_type_id' => 'OEModule\OphCiExamination\models\Element_OphCiExamination_VisualAcuity',
                                 'display_order' => 10,
-                                'required' => false,
+                                'required' => 0,
                         )), $event_type_id);
 
         $this->createTable('ophciexamination_colourvision_method', array(

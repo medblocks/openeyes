@@ -14,7 +14,7 @@ class m140506_161243_visual_fields extends OEMigration
             'name' => 'varchar(128) NOT NULL',
             'display_order' => 'int(10) unsigned NOT NULL DEFAULT 1',
             'default' => 'tinyint(1) unsigned NOT NULL DEFAULT 0',
-            'deleted' => 'tinyint(1) unsigned not null',
+            'deleted' => 'tinyint(1) unsigned not null default 0',
             'active' => 'int(11) unsigned not null',
             ),
             true

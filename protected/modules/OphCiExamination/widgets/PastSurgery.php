@@ -188,9 +188,9 @@ class PastSurgery extends \BaseEventElementWidget
 
         foreach ($this->element->operations as $i => $op) {
             if (in_array($op->operation, $required_operation_list)) {
-                $operations[] = ['op' => $op, 'required' => true,];
+                $operations[] = ['op' => $op, 'required' => 1,];
             } else {
-                $required[] = ['op' => $op, 'required' => false,];
+                $required[] = ['op' => $op, 'required' => 0,];
             }
         }
 

@@ -60,7 +60,7 @@ use OEModule\OphCiExamination\models\SystemicSurgery_Operation;
                             //hack here: removable set to true as we need to edit the fields,
                             // 'required' introduced as we need to hide the remove btn.
                             'removable' => true,
-                            'required' => true,
+                            'required' => 1,
                             'posted_not_checked' => $element->widget->postedNotChecked($row_count)
                         ]
                     );

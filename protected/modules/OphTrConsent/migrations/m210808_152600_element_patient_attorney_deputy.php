@@ -17,7 +17,7 @@ class m210808_152600_element_patient_attorney_deputy extends OEMigration
             $this->createElementType("OphTrConsent", 'Patient\'s attorney or deputy', array(
                 'class_name' => 'OEModule\\OphTrConsent\\models\\Element_OphTrConsent_PatientAttorneyDeputy',
                 'default' => true,
-                'required' => true,
+                'required' => 1,
                 'display_order' => 80
             ));
         }

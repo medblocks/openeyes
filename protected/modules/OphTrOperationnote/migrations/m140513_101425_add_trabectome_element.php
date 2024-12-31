@@ -9,7 +9,7 @@ class m140513_101425_add_trabectome_element extends OEMigration
                                 'name' => 'Trabectome',
                                 'parent_element_type_id' => 'Element_OphTrOperationnote_ProcedureList',
                                 'display_order' => 20,
-                                'required' => false,
+                                'required' => 0,
                         )), $event_type_id);
         $element_type_id = $et_ids[0];
 

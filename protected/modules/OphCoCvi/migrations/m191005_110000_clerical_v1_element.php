@@ -22,7 +22,7 @@ class m191005_110000_clerical_v1_element extends OEMigration
         $this->createElementType("OphCoCvi", "Clerical Info", [
             'class_name' => 'OEModule\\OphCoCvi\\models\\Element_OphCoCvi_ClericalInfo_V1',
             'default' => true,
-            'required' => true,
+            'required' => 1,
             'display_order' => 40,
         ]);
     }
@@ -34,7 +34,7 @@ class m191005_110000_clerical_v1_element extends OEMigration
          $this->createElementType("OphCoCvi", "Clerical Info", [
             'class_name' => 'OEModule\\OphCoCvi\\models\\Element_OphCoCvi_ClericalInfo',
             'default' => true,
-            'required' => true,
+            'required' => 1,
             'display_order' => 1,
          ]);
     }

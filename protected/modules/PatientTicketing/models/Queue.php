@@ -376,7 +376,7 @@ class Queue extends \BaseActiveRecordVersioned
         $flds[] = array(
             'id' => '_notes',
             'form_name' => self::$FIELD_PREFIX . '_notes',
-            'required' => false,
+            'required' => 0,
             'type' => 'textarea',
             'label' => 'Notes',);
 

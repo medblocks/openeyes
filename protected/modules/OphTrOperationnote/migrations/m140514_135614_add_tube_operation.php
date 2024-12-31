@@ -10,7 +10,7 @@ class m140514_135614_add_tube_operation extends OEMigration
                                 'name' => 'Glaucoma Tube',
                                 'display_order' => 15,
                                 'parent_element_type_id' => 'Element_OphTrOperationnote_ProcedureList',
-                                'required' => false,
+                                'required' => 0,
                                 'default' => false,
                         )), $event_type['id']);
 

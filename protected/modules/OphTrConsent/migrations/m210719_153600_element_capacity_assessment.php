@@ -23,7 +23,7 @@ class m210719_153600_element_capacity_assessment extends OEMigration
             $this->createElementType("OphTrConsent", 'Assessment of patient\'s capacity', array(
                 'class_name' => 'OEModule\\OphTrConsent\\models\\Element_OphTrConsent_CapacityAssessment',
                 'default' => true,
-                'required' => true,
+                'required' => 1,
                 'display_order' => 80
             ));
         } else {

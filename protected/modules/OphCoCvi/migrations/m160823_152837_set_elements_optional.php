@@ -24,7 +24,7 @@ class m160823_152837_set_elements_optional extends CDbMigration
                 ->where('class_name = :name', array(':name' => $cls))
                 ->queryRow();
 
-            $this->update('element_type', array('required' => false), 'id = :et_id', array(':et_id' => $element['id']));
+            $this->update('element_type', array('required' => 0), 'id = :et_id', array(':et_id' => $element['id']));
         }
     }
 

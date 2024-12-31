@@ -180,9 +180,9 @@ class SystemicSurgery extends \BaseEventElementWidget
 
         foreach ($this->element->operations as $operation) {
             if (in_array($operation->operation, $required_operation_list)) {
-                $current_operations[] = ['op' => $operation, 'required' => true, ];
+                $current_operations[] = ['op' => $operation, 'required' => 1, ];
             } else {
-                $required_operations[] = ['op' => $operation, 'required' => false, ];
+                $required_operations[] = ['op' => $operation, 'required' => 0, ];
             }
         }
 
