@@ -147,7 +147,7 @@ class m140203_150454_event_type_OphInBiometry extends CDbMigration
                 'last_modified_date' => 'datetime NOT NULL DEFAULT \'1901-01-01 00:00:00\'',
                 'created_user_id' => 'int(10) unsigned NOT NULL DEFAULT 1',
                 'created_date' => 'datetime NOT NULL DEFAULT \'1901-01-01 00:00:00\'',
-                'deleted' => 'tinyint(1) unsigned not null',
+                'deleted' => 'tinyint(1) unsigned not null DEFAULT 0',
                 'PRIMARY KEY (`id`)',
                 'KEY `ophinbiometry_lenstype_lens_lmui_fk` (`last_modified_user_id`)',
                 'KEY `ophinbiometry_lenstype_lens_cui_fk` (`created_user_id`)',
@@ -155,8 +155,8 @@ class m140203_150454_event_type_OphInBiometry extends CDbMigration
                 'CONSTRAINT `ophinbiometry_lenstype_lens_cui_fk` FOREIGN KEY (`created_user_id`) REFERENCES `user` (`id`)',
             ), 'ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci');
 
-        $this->insert('ophinbiometry_lenstype_lens', array('name' => 'MA60AC', 'display_order' => 1, deleted => 0));
-        $this->insert('ophinbiometry_lenstype_lens', array('name' => 'SN60WF', 'display_order' => 2, deleted => 0));
+        $this->insert('ophinbiometry_lenstype_lens', array('name' => 'MA60AC', 'display_order' => 1));
+        $this->insert('ophinbiometry_lenstype_lens', array('name' => 'SN60WF', 'display_order' => 2));
 
         $this->createTable('et_ophinbiometry_lenstype', array(
                 'id' => 'int(10) unsigned NOT NULL AUTO_INCREMENT',
