@@ -120,7 +120,16 @@ class m140430_123639_trabeculectomy extends OEMigration
             true
         );
 
-        $this->createElementType('OphTrOperationnote', 'Trabeculectomy', array('display_order' => 20, 'parent_name' => 'ProcedureList'));
+        $event_type = $this->dbConnection->createCommand()->select('id')->from('event_type')->where('class_name=:class_name', array(':class_name'=>'OphTrOperationnote'))->queryRow();
+
+        $this->insert('element_type', array(
+            'name' => 'Trabeculectomy',
+            'class_name' => 'Element_OphTrOperationnote_Trabeculectomy',
+            'event_type_id' => $event_type['id'],
+            'display_order' => 20,
+            'default' => 0,
+            'required' => 0
+        ));
     }
 
     public function down()
