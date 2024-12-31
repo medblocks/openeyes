@@ -30,19 +30,19 @@ RUN apt-get install -y npm nodejs
 RUN apt install apache2 -y
 RUN apt install -y mariadb-client-core-10.*
 RUN curl -sS https://raw.githubusercontent.com/composer/getcomposer.org/76a7060ccb93902cd7576b67264ad91c8a2700e2/web/installer | php -- --quiet
+RUN mv composer.phar /usr/local/bin/composer
+
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash \
-    && . $NVM_DIR/nvm.sh \
+    && export NVM_DIR="$HOME/.nvm" \
+    && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" \
     && nvm install $NODE_VERSION \
     && nvm alias default $NODE_VERSION \
-    && nvm use default \
-    && npm cache clean --force
+    && nvm use default
 
 COPY . /var/www/openeyes
 RUN ls -la /var/www/openeyes
 RUN cd /var/www/openeyes \
     && npm install
-
-RUN mv composer.phar /usr/local/bin/composer
 
 RUN cd /var/www/openeyes && composer install --no-interaction
 
