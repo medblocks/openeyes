@@ -8,7 +8,7 @@ class m141119_160736_common_ophthalmic_disorder_groups extends OEMigration
                 'id' => 'int(10) unsigned NOT NULL AUTO_INCREMENT',
                 'name' => 'varchar(64) not null',
                 'display_order' => 'tinyint(1) unsigned not null',
-                'deleted' => 'tinyint(1) unsigned not null',
+                'deleted' => 'tinyint(1) unsigned not null default 0',
                 'last_modified_user_id' => 'int(10) unsigned NOT NULL DEFAULT 1',
                 'last_modified_date' => 'datetime NOT NULL DEFAULT \'1901-01-01 00:00:00\'',
                 'created_user_id' => 'int(10) unsigned NOT NULL DEFAULT 1',

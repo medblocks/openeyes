@@ -10,6 +10,7 @@ class m140204_134240_systemic_diagnosis_shortcode extends CDbMigration
                 'default_code' => 'syd',
                 'code' => 'syd',
                 'description' => 'Systemic diagnoses',
+                'method' => '',
             )
         );
     }
