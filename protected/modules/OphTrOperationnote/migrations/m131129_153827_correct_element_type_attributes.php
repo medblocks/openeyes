@@ -23,7 +23,7 @@ class m131129_153827_correct_element_type_attributes extends CDbMigration
             'Element_OphTrOperationnote_Personnel',
             ) as $class_name) {
             # not default elements
-            $this->update('element_type', array('default' => false, 'parent_element_type_id' => $proclist['id']), 'class_name = :cname', array(':cname' => $class_name));
+            $this->update('element_type', array('default' => 0, 'parent_element_type_id' => $proclist['id']), 'class_name = :cname', array(':cname' => $class_name));
         }
 
         foreach (array(
@@ -34,7 +34,7 @@ class m131129_153827_correct_element_type_attributes extends CDbMigration
                      'Element_OphTrOperationnote_Comments',
                  ) as $class_name) {
             # required
-            $this->update('element_type', array('required' => true), 'class_name = :cname', array(':cname' => $class_name));
+            $this->update('element_type', array('required' => 1), 'class_name = :cname', array(':cname' => $class_name));
         }
     }
 
@@ -50,7 +50,7 @@ class m131129_153827_correct_element_type_attributes extends CDbMigration
              'Element_OphTrOperationnote_Personnel',
              ) as $class_name) {
             # reset back to default
-            $this->update('element_type', array('default' => true, 'parent_element_type_id' => null), 'class_name = :cname', array(':cname' => $class_name));
+            $this->update('element_type', array('default' => 1, 'parent_element_type_id' => null), 'class_name = :cname', array(':cname' => $class_name));
         }
 
         foreach (array(
@@ -61,7 +61,7 @@ class m131129_153827_correct_element_type_attributes extends CDbMigration
                      'Element_OphTrOperationnote_Comments',
                  ) as $class_name) {
             # required back to null
-            $this->update('element_type', array('required' => null), 'class_name = :cname', array(':cname' => $class_name));
+            $this->update('element_type', array('required' => 0), 'class_name = :cname', array(':cname' => $class_name));
         }
     }
 

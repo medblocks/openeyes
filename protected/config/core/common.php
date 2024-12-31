@@ -1026,9 +1026,9 @@ $modules = array(
         'OphInLabResults',
         'OphCoCvi' => array('class' => '\OEModule\OphCoCvi\OphCoCviModule'),
         'Genetics',
-        'OphInDnasample',
-        'OphInDnaextraction',
-        'OphInGeneticresults',
+        // 'OphInDnasample',
+        // 'OphInDnaextraction',
+        // 'OphInGeneticresults',
         'OphCoDocument',
         'OphCiDidNotAttend' => ['class' => OEModule\OphCiDidNotAttend\OphCiDidNotAttendModule::class],
         'OphGeneric' => ['class' => OEModule\OphGeneric\OphGenericModule::class],
@@ -1038,7 +1038,7 @@ $modules = array(
         'OphOuCatprom5',
         'OphTrOperationchecklists',
         'OphDrPGDPSD',
-        'BreakGlass' => array('class' => '\OEModule\BreakGlass\BreakGlassModule'),
+        'BreakGlass' => array('class' => '\OEModule\BreakGlass\BreakGlassModule')
         );
 
 if (strtolower(getenv('OE_MODE')) !== 'live') {

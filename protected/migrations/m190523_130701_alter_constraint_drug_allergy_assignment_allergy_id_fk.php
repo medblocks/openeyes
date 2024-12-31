@@ -16,6 +16,6 @@ class m190523_130701_alter_constraint_drug_allergy_assignment_allergy_id_fk exte
     {
         $this->dropForeignKey(self::FOREIGN_KEY_CONSTRAINT_NAME, self::TABLE_NAME);
         $this->alterColumn(self::TABLE_NAME, 'allergy_id', 'INT(10) unsigned NOT NULL');
-        $this->addForeignKey(self::FOREIGN_KEY_CONSTRAINT_NAME, self::TABLE_NAME, 'allergy_id', 'archive_allergy', 'id');
+        // $this->addForeignKey(self::FOREIGN_KEY_CONSTRAINT_NAME, self::TABLE_NAME, 'allergy_id', 'archive_allergy', 'id');
     }
 }

@@ -2745,7 +2745,7 @@ class m130913_000000_consolidation extends OEMigration
 							 `field_type_id` int(10) unsigned NOT NULL,
 							 `key` varchar(64) NOT NULL,
 							 `name` varchar(64) NOT NULL,
-							 `data` varchar(4096) NOT NULL,
+							 `data` varchar(4096) NOT NULL DEFAULT'',
 							 `default_value` varchar(64) NOT NULL,
 							 `last_modified_user_id` int(10) unsigned NOT NULL DEFAULT '1',
 							 `last_modified_date` datetime NOT NULL DEFAULT '1900-01-01 00:00:00',
