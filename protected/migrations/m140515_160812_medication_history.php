@@ -9,7 +9,7 @@ class m140515_160812_medication_history extends OEMigration
             array(
                 'id' => 'pk',
                 'name' => 'string not null',
-                'display_order' => 'integer not null',
+                'display_order' => 'integer not null default 0',
                 'active' => 'boolean not null default true',
             ),
             true

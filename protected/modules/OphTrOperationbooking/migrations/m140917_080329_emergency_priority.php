@@ -4,7 +4,7 @@ class m140917_080329_emergency_priority extends CDbMigration
 {
     public function up()
     {
-        $this->addColumn('ophtroperationbooking_operation_priority', 'schedule_authitem', 'varchar(64) not null');
+        $this->addColumn('ophtroperationbooking_operation_priority', 'schedule_authitem', 'varchar(64) not null default "" ');
 
         $this->insert('ophtroperationbooking_operation_priority', array('id' => 3, 'name' => 'Emergency', 'display_order' => 3));
 

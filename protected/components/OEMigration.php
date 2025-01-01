@@ -373,7 +373,7 @@ class OEMigration extends CDbMigration
             'display_order' => isset($params['display_order']) ? $params['display_order'] : 1,
             'default' => isset($params['default']) ? $params['default'] : 0,
             'required' => isset($params['required']) ? $params['required'] : 0,
-            'group_title' => isset($params['group_title']) ? $params['group_title'] : '',
+            // 'group_title' => isset($params['group_title']) ? $params['group_title'] : '',
         );
 
         if (isset($params['group_name'])) {
@@ -1367,7 +1367,7 @@ class OEMigration extends CDbMigration
         string $warning_note = null
     ) {
         // Search index
-        $event_type_id = $this->dbConnection->createCommand("SELECT id FROM event_type WHERE `class_name` = :event_class")->queryScalar([':event_class' => $event_class]);     
+        $event_type_id = $this->dbConnection->createCommand("SELECT id FROM event_type WHERE `class_name` = :event_class")->queryScalar([':event_class' => $event_class]);
         $parent_id = $this->dbConnection->createCommand("SELECT id FROM index_search WHERE primary_term = :parent_term")->queryScalar([ ':parent_term' => $parent_name ]);
 
         $this->execute(
