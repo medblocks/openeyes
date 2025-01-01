@@ -14,9 +14,9 @@ services:
 
   openeyes:
     image: master1
-    build:
-      context: "../"
-      dockerfile: "Dockerfile"
+    # build:
+    #   context: "../"
+    #   dockerfile: "Dockerfile"
     ports:
       - "8080:80"
     volumes:

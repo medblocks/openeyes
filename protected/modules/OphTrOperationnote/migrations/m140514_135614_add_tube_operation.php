@@ -11,7 +11,7 @@ class m140514_135614_add_tube_operation extends OEMigration
                                 'display_order' => 15,
                                 'parent_element_type_id' => 'Element_OphTrOperationnote_ProcedureList',
                                 'required' => 0,
-                                'default' => false,
+                                'default' => 0,
                         )), $event_type['id']);
 
         $element_type_id = $ets[0];
