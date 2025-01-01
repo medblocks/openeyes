@@ -773,7 +773,7 @@ class m130913_000000_consolidation extends OEMigration
             "CREATE TABLE `common_previous_operation` (
 							 `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
 							 `name` varchar(1024) NOT NULL,
-							 `display_order` tinyint(1) unsigned NOT NULL,
+							 `display_order` tinyint(1) unsigned NOT NULL DEFAULT '0',
 							 `last_modified_user_id` int(10) unsigned NOT NULL DEFAULT '1',
 							 `last_modified_date` datetime NOT NULL DEFAULT '1900-01-01 00:00:00',
 							 `created_user_id` int(10) unsigned NOT NULL DEFAULT '1',
