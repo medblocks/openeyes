@@ -276,16 +276,30 @@ class m150511_161109_examinationAttributesData extends CDbMigration
                             array(':name' => $this->subspecialtyData[$ophciexaminationAttributeOption['subspecialty_id']]['name'])
                         )->queryRow();
 
-                        $currentAttributeOption = $this->dbConnection->createCommand()->select('*')
-                            ->from('ophciexamination_attribute_option')
-                            ->where(
-                                'value = :value and subspecialty_id = :subspecialty_id and attribute_element_id = :attribute_element_id',
-                                array(
-                                    ':value' => $ophciexaminationAttributeOption['value'],
-                                    ':subspecialty_id' => $subspecialtyData['id'],
-                                    ':attribute_element_id' => $attributeElementData['id'],
-                                )
-                            )->queryRow();
+                        if ($subspecialtyData !== false) {
+                            $currentAttributeOption = $this->dbConnection->createCommand()->select('*')
+                                ->from('ophciexamination_attribute_option')
+                                ->where(
+                                    'value = :value and subspecialty_id = :subspecialty_id and attribute_element_id = :attribute_element_id',
+                                    array(
+                                        ':value' => $ophciexaminationAttributeOption['value'],
+                                        ':subspecialty_id' => $subspecialtyData['id'],
+                                        ':attribute_element_id' => $attributeElementData['id'],
+                                    )
+                                )->queryRow();
+                        } else {
+                            // Handle the case where no subspecialty data is found
+                            $subspecialtyData = ['id' => null];
+                            $currentAttributeOption = $this->dbConnection->createCommand()->select('*')
+                                ->from('ophciexamination_attribute_option')
+                                ->where(
+                                    'value = :value and attribute_element_id = :attribute_element_id',
+                                    array(
+                                        ':value' => $ophciexaminationAttributeOption['value'],
+                                        ':attribute_element_id' => $attributeElementData['id'],
+                                    )
+                                )->queryRow();
+                        }
                     } else {
                         $subspecialtyData['id'] = null;
                         $currentAttributeOption = $this->dbConnection->createCommand()->select('*')
