@@ -238,31 +238,31 @@ class m170305_160630_add_keratoconus_data extends OEMigration
             'defaultChoice' => 0,
         ));
 
-        $this->insert('ophtroperationnote_cxl_epithelial_removal_diameter_version', array(
-            'name' => '6mm',
-            'display_order' => 1,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_epithelial_removal_diameter_version', array(
-            'name' => '7mm',
-            'display_order' => 2,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_epithelial_removal_diameter_version', array(
-            'name' => '8mm',
-            'display_order' => 3,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_epithelial_removal_diameter_version', array(
-            'name' => '9mm',
-            'display_order' => 4,
-            'defaultChoice' => 1,
-        ));
-        $this->insert('ophtroperationnote_cxl_epithelial_removal_diameter_version', array(
-            'name' => '10mm',
-            'display_order' => 5,
-            'defaultChoice' => 0,
-        ));
+        // $this->insert('ophtroperationnote_cxl_epithelial_removal_diameter_version', array(
+        //     'name' => '6mm',
+        //     'display_order' => 1,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_epithelial_removal_diameter_version', array(
+        //     'name' => '7mm',
+        //     'display_order' => 2,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_epithelial_removal_diameter_version', array(
+        //     'name' => '8mm',
+        //     'display_order' => 3,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_epithelial_removal_diameter_version', array(
+        //     'name' => '9mm',
+        //     'display_order' => 4,
+        //     'defaultChoice' => 1,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_epithelial_removal_diameter_version', array(
+        //     'name' => '10mm',
+        //     'display_order' => 5,
+        //     'defaultChoice' => 0,
+        // ));
 
         $this->insert('ophtroperationnote_cxl_epithelial_removal_method', array(
             'name' => 'Manual',

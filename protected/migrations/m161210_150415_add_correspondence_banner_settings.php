@@ -11,6 +11,7 @@ class m161210_150415_add_correspondence_banner_settings extends CDbMigration
                 'field_type_id' => 4,
                 'key' => 'correspondence_create_banner',
                 'name' => 'Correspondence create banner',
+                'default_value' => '1',
             ));
     }
 
