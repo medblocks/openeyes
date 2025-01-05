@@ -21,7 +21,7 @@ class m151217_215115_message_type_enhancement extends OEMigration
         $this->addColumn('ophcomessaging_message_message_type', 'reply_required', 'boolean DEFAULT false NOT NULL');
         $this->addColumn('ophcomessaging_message_message_type_version', 'reply_required', 'boolean DEFAULT false NOT NULL');
 
-        $this->insert('ophcomessaging_message_message_type', array('name' => 'Query', 'reply_required' => true, 'display_order' => 2));
+        $this->insert('ophcomessaging_message_message_type', array('name' => 'Query', 'reply_required' => true, 'display_order' => 2, 'deleted' => 0));
     }
 
     public function down()
