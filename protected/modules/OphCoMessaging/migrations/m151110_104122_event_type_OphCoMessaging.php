@@ -66,7 +66,7 @@ class m151110_104122_event_type_OphCoMessaging extends CDbMigration
                 'CONSTRAINT `ophcomessaging_message_message_type_aid_fk` FOREIGN KEY (`id`) REFERENCES `ophcomessaging_message_message_type` (`id`)',
             ), 'ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci');
 
-        $this->insert('ophcomessaging_message_message_type', array('name' => 'General', 'display_order' => 1));
+        $this->insert('ophcomessaging_message_message_type', array('name' => 'General', 'display_order' => 1, 'deleted' => 0));
 
         $this->createTable('et_ophcomessaging_message', array(
                 'id' => 'int(10) unsigned NOT NULL AUTO_INCREMENT',
