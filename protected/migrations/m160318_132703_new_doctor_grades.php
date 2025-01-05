@@ -58,7 +58,7 @@ class m160318_132703_new_doctor_grades extends CDbMigration
                         array('id' => $id,
                         'grade' => $doctor_grade,
                         'display_order' => $id,
-                        'has_pcr_risk' => ($id >= 20) ? false : true,
+                        'has_pcr_risk' => 0
                         )
                     );
                 }
