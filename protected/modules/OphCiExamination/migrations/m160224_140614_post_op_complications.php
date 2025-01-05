@@ -9,8 +9,8 @@ class m160224_140614_post_op_complications extends OEMigration
             array(
                 'id' => 'pk',
                 'code' => 'SMALLINT(4) UNSIGNED',
-                'name' => 'VARCHAR(64) NOT NULL',
-                'display_order' => 'TINYINT(3) UNSIGNED NOT NULL',
+                'name' => 'VARCHAR(256) NOT NULL',
+                'display_order' => 'TINYINT(3) UNSIGNED NOT NULL DEFAULT 0',
                 'active' => 'TINYINT(1) NOT NULL DEFAULT 1',
             ),
             true
