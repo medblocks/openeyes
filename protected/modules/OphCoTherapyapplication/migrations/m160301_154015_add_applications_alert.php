@@ -10,6 +10,7 @@ class m160301_154015_add_applications_alert extends CDbMigration
             'field_type_id' => $fieldType['id'],
             'key' => 'applications_alert_recipients',
             'name' => 'Therapy Applications Alert Recipients',
+            'default_value' => 'off',
         ));
 
         $this->insert('setting_installation', array(
