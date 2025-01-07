@@ -249,7 +249,7 @@ class m170305_142449_create_keratoconus extends OEMigration
 
         $this->createOETable('ophtroperationnote_cxl_total_exposure_time', array(
             'id' => 'pk',
-            'name' => 'int(10)',
+            'name' => 'varchar(255)',
             'display_order' => 'int(10)',
             'defaultChoice' => 'int(11)'
         ), true);

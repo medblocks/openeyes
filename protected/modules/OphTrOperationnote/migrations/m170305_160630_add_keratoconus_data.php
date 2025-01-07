@@ -295,36 +295,36 @@ class m170305_160630_add_keratoconus_data extends OEMigration
             'defaultChoice' => 0,
         ));
 
-        $this->insert('ophtroperationnote_cxl_epithelial_removal_method_version', array(
-            'name' => 'Manual',
-            'display_order' => 1,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_epithelial_removal_method_version', array(
-            'name' => 'Alcohol Assisted Manual',
-            'display_order' => 2,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_epithelial_removal_method_version', array(
-            'name' => 'Trans-PTK',
-            'display_order' => 3,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_epithelial_removal_method_version', array(
-            'name' => 'Epithelium Disrupted',
-            'display_order' => 4,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_epithelial_removal_method_version', array(
-            'name' => 'Epithelium-on',
-            'display_order' => 5,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_epithelial_removal_method_version', array(
-            'name' => 'Trans-PRK',
-            'display_order' => 6,
-            'defaultChoice' => 0,
-        ));
+        // $this->insert('ophtroperationnote_cxl_epithelial_removal_method_version', array(
+        //     'name' => 'Manual',
+        //     'display_order' => 1,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_epithelial_removal_method_version', array(
+        //     'name' => 'Alcohol Assisted Manual',
+        //     'display_order' => 2,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_epithelial_removal_method_version', array(
+        //     'name' => 'Trans-PTK',
+        //     'display_order' => 3,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_epithelial_removal_method_version', array(
+        //     'name' => 'Epithelium Disrupted',
+        //     'display_order' => 4,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_epithelial_removal_method_version', array(
+        //     'name' => 'Epithelium-on',
+        //     'display_order' => 5,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_epithelial_removal_method_version', array(
+        //     'name' => 'Trans-PRK',
+        //     'display_order' => 6,
+        //     'defaultChoice' => 0,
+        // ));
 
         $this->insert('ophtroperationnote_cxl_interpulse_duration', array(
             'name' => '0 seconds',
@@ -382,61 +382,61 @@ class m170305_160630_add_keratoconus_data extends OEMigration
             'defaultChoice' => 0,
         ));
 
-        $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
-            'name' => '0 seconds',
-            'display_order' => 1,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
-            'name' => '0.5 seconds',
-            'display_order' => 2,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
-            'name' => '1 seconds',
-            'display_order' => 3,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
-            'name' => '1.5 seconds',
-            'display_order' => 4,
-            'defaultChoice' => 1,
-        ));
-        $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
-            'name' => '2 seconds',
-            'display_order' => 5,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
-            'name' => '2.5 seconds',
-            'display_order' => 6,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
-            'name' => '3 seconds',
-            'display_order' => 7,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
-            'name' => '3.5 seconds',
-            'display_order' => 8,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
-            'name' => '4 seconds',
-            'display_order' => 9,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
-            'name' => '4.5 seconds',
-            'display_order' => 10,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
-            'name' => '5 seconds',
-            'display_order' => 11,
-            'defaultChoice' => 0,
-        ));
+        // $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
+        //     'name' => '0 seconds',
+        //     'display_order' => 1,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
+        //     'name' => '0.5 seconds',
+        //     'display_order' => 2,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
+        //     'name' => '1 seconds',
+        //     'display_order' => 3,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
+        //     'name' => '1.5 seconds',
+        //     'display_order' => 4,
+        //     'defaultChoice' => 1,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
+        //     'name' => '2 seconds',
+        //     'display_order' => 5,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
+        //     'name' => '2.5 seconds',
+        //     'display_order' => 6,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
+        //     'name' => '3 seconds',
+        //     'display_order' => 7,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
+        //     'name' => '3.5 seconds',
+        //     'display_order' => 8,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
+        //     'name' => '4 seconds',
+        //     'display_order' => 9,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
+        //     'name' => '4.5 seconds',
+        //     'display_order' => 10,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_interpulse_duration_version', array(
+        //     'name' => '5 seconds',
+        //     'display_order' => 11,
+        //     'defaultChoice' => 0,
+        // ));
 
         $this->insert('ophtroperationnote_cxl_interval_between_drops', array(
             'name' => '1 minute',
@@ -454,21 +454,21 @@ class m170305_160630_add_keratoconus_data extends OEMigration
             'defaultChoice' => 0,
         ));
 
-        $this->insert('ophtroperationnote_cxl_interval_between_drops_version', array(
-            'name' => '1 minute',
-            'display_order' => 1,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_interval_between_drops_version', array(
-            'name' => '2 minutes',
-            'display_order' => 2,
-            'defaultChoice' => 1,
-        ));
-        $this->insert('ophtroperationnote_cxl_interval_between_drops_version', array(
-            'name' => '3 minutes',
-            'display_order' => 3,
-            'defaultChoice' => 0,
-        ));
+        // $this->insert('ophtroperationnote_cxl_interval_between_drops_version', array(
+        //     'name' => '1 minute',
+        //     'display_order' => 1,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_interval_between_drops_version', array(
+        //     'name' => '2 minutes',
+        //     'display_order' => 2,
+        //     'defaultChoice' => 1,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_interval_between_drops_version', array(
+        //     'name' => '3 minutes',
+        //     'display_order' => 3,
+        //     'defaultChoice' => 0,
+        // ));
 
         $this->insert('ophtroperationnote_cxl_protocol', array(
             'name' => 'Avedro Rapid Pulsed',
@@ -491,26 +491,26 @@ class m170305_160630_add_keratoconus_data extends OEMigration
             'defaultChoice' => 0,
         ));
 
-        $this->insert('ophtroperationnote_cxl_protocol_version', array(
-            'name' => 'Avedro Rapid Pulsed',
-            'display_order' => 1,
-            'defaultChoice' => 1,
-        ));
-        $this->insert('ophtroperationnote_cxl_protocol_version', array(
-            'name' => 'Avedro Rapid',
-            'display_order' => 2,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_protocol_version', array(
-            'name' => 'Dresden',
-            'display_order' => 3,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_protocol_version', array(
-            'name' => 'LASIK Extra',
-            'display_order' => 4,
-            'defaultChoice' => 0,
-        ));
+        // $this->insert('ophtroperationnote_cxl_protocol_version', array(
+        //     'name' => 'Avedro Rapid Pulsed',
+        //     'display_order' => 1,
+        //     'defaultChoice' => 1,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_protocol_version', array(
+        //     'name' => 'Avedro Rapid',
+        //     'display_order' => 2,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_protocol_version', array(
+        //     'name' => 'Dresden',
+        //     'display_order' => 3,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_protocol_version', array(
+        //     'name' => 'LASIK Extra',
+        //     'display_order' => 4,
+        //     'defaultChoice' => 0,
+        // ));
 
         $this->insert('ophtroperationnote_cxl_riboflavin_preparation', array(
             'name' => 'Vibex Rapid',
@@ -523,16 +523,16 @@ class m170305_160630_add_keratoconus_data extends OEMigration
             'defaultChoice' => 0,
         ));
 
-        $this->insert('ophtroperationnote_cxl_riboflavin_preparation_version', array(
-            'name' => 'Vibex Rapid',
-            'display_order' => 1,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_riboflavin_preparation_version', array(
-            'name' => 'Vibex Extra',
-            'display_order' => 2,
-            'defaultChoice' => 0,
-        ));
+        // $this->insert('ophtroperationnote_cxl_riboflavin_preparation_version', array(
+        //     'name' => 'Vibex Rapid',
+        //     'display_order' => 1,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_riboflavin_preparation_version', array(
+        //     'name' => 'Vibex Extra',
+        //     'display_order' => 2,
+        //     'defaultChoice' => 0,
+        // ));
 
         $columns = 30;
         for ($k = 1 ; $k < $columns; $k++) {
@@ -546,33 +546,34 @@ class m170305_160630_add_keratoconus_data extends OEMigration
                 'display_order' => $k,
                 'defaultChoice' => $defaultChoice,
             ));
-            $this->insert('ophtroperationnote_cxl_soak_duration_version', array(
-                'name' => $k . ' minutes',
-                'display_order' => $k,
-                'defaultChoice' => $defaultChoice,
-            ));
+            // $this->insert('ophtroperationnote_cxl_soak_duration_version', array(
+            //     'name' => $k . ' minutes',
+            //     'display_order' => $k,
+            //     'defaultChoice' => $defaultChoice,
+            // ));
         }
 
-        $columns = 30;
+
+        $columns = 40;        $columns = 30;
         for ($k = 0 ; $k < $columns; $k++) {
             if ($k == 8) {
                 $defaultChoice = 1;
             } else {
                 $defaultChoice = 0;
             }
+            $name = substr($k . ' minutes', 0, 255); // Adjust length as needed
             $this->insert('ophtroperationnote_cxl_total_exposure_time', array(
-                'name' => $k . ' minutes',
+                'name' => $name,
                 'display_order' => $k+1,
                 'defaultChoice' => $defaultChoice,
             ));
-            $this->insert('ophtroperationnote_cxl_total_exposure_time_version', array(
-                'name' => $k . ' minutes',
-                'display_order' => $k+1,
-                'defaultChoice' => $defaultChoice,
-            ));
+            // $this->insert('ophtroperationnote_cxl_total_exposure_time_version', array(
+            //     'name' => $k . ' minutes',
+            //     'display_order' => $k+1,
+            //     'defaultChoice' => $defaultChoice,
+            // ));
         }
 
-        $columns = 40;
         for ($k = 3 ; $k < $columns; $k++) {
             if ($k == 30) {
                 $defaultChoice = 1;
@@ -584,125 +585,125 @@ class m170305_160630_add_keratoconus_data extends OEMigration
                 'display_order' => $k-2,
                 'defaultChoice' => $defaultChoice,
             ));
-            $this->insert('ophtroperationnote_cxl_uv_irradiance_version', array(
-                'name' => $k . ' minutes',
-                'display_order' => $k-2,
-                'defaultChoice' => $defaultChoice,
-            ));
+            // $this->insert('ophtroperationnote_cxl_uv_irradiance_version', array(
+            //     'name' => $k . ' minutes',
+            //     'display_order' => $k-2,
+            //     'defaultChoice' => $defaultChoice,
+            // ));
         }
 
         $this->insert('ophtroperationnote_cxl_uv_pulse_duration', array(
-            'name' => '0 seconds',
+            'name' => 0,
             'display_order' => 1,
             'defaultChoice' => 0,
         ));
         $this->insert('ophtroperationnote_cxl_uv_pulse_duration', array(
-            'name' => '0.5 seconds',
+            'name' => 500,
             'display_order' => 2,
             'defaultChoice' => 0,
         ));
         $this->insert('ophtroperationnote_cxl_uv_pulse_duration', array(
-            'name' => '1 seconds',
+            'name' => 1000,
             'display_order' => 3,
             'defaultChoice' => 0,
         ));
         $this->insert('ophtroperationnote_cxl_uv_pulse_duration', array(
-            'name' => '1.5 seconds',
+            'name' => 1500,
             'display_order' => 4,
             'defaultChoice' => 1,
         ));
         $this->insert('ophtroperationnote_cxl_uv_pulse_duration', array(
-            'name' => '2 seconds',
+            'name' => 2000,
             'display_order' => 5,
             'defaultChoice' => 0,
         ));
         $this->insert('ophtroperationnote_cxl_uv_pulse_duration', array(
-            'name' => '2.5 seconds',
+            'name' => 2500,
             'display_order' => 6,
             'defaultChoice' => 0,
         ));
         $this->insert('ophtroperationnote_cxl_uv_pulse_duration', array(
-            'name' => '3 seconds',
+            'name' => 3000,
             'display_order' => 7,
             'defaultChoice' => 0,
         ));
         $this->insert('ophtroperationnote_cxl_uv_pulse_duration', array(
-            'name' => '3.5 seconds',
+            'name' => 3500,
             'display_order' => 8,
             'defaultChoice' => 0,
         ));
         $this->insert('ophtroperationnote_cxl_uv_pulse_duration', array(
-            'name' => '4 seconds',
+            'name' => 4000,
             'display_order' => 9,
             'defaultChoice' => 0,
         ));
         $this->insert('ophtroperationnote_cxl_uv_pulse_duration', array(
-            'name' => '4.5 seconds',
+            'name' => 4500,
             'display_order' => 10,
             'defaultChoice' => 0,
         ));
         $this->insert('ophtroperationnote_cxl_uv_pulse_duration', array(
-            'name' => '5 seconds',
+            'name' => 5000,
             'display_order' => 11,
             'defaultChoice' => 0,
         ));
 
 
-        $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
-            'name' => '0 seconds',
-            'display_order' => 1,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
-            'name' => '0.5 seconds',
-            'display_order' => 2,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
-            'name' => '1 seconds',
-            'display_order' => 3,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
-            'name' => '1.5 seconds',
-            'display_order' => 4,
-            'defaultChoice' => 1,
-        ));
-        $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
-            'name' => '2 seconds',
-            'display_order' => 5,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
-            'name' => '2.5 seconds',
-            'display_order' => 6,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
-            'name' => '3 seconds',
-            'display_order' => 7,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
-            'name' => '3.5 seconds',
-            'display_order' => 8,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
-            'name' => '4 seconds',
-            'display_order' => 9,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
-            'name' => '4.5 seconds',
-            'display_order' => 10,
-            'defaultChoice' => 0,
-        ));
-        $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
-            'name' => '5 seconds',
-            'display_order' => 11,
-            'defaultChoice' => 0,
-        ));
+        // $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
+        //     'name' => '0 seconds',
+        //     'display_order' => 1,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
+        //     'name' => '0.5 seconds',
+        //     'display_order' => 2,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
+        //     'name' => '1 seconds',
+        //     'display_order' => 3,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
+        //     'name' => '1.5 seconds',
+        //     'display_order' => 4,
+        //     'defaultChoice' => 1,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
+        //     'name' => '2 seconds',
+        //     'display_order' => 5,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
+        //     'name' => '2.5 seconds',
+        //     'display_order' => 6,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
+        //     'name' => '3 seconds',
+        //     'display_order' => 7,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
+        //     'name' => '3.5 seconds',
+        //     'display_order' => 8,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
+        //     'name' => '4 seconds',
+        //     'display_order' => 9,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
+        //     'name' => '4.5 seconds',
+        //     'display_order' => 10,
+        //     'defaultChoice' => 0,
+        // ));
+        // $this->insert('ophtroperationnote_cxl_uv_pulse_duration_version', array(
+        //     'name' => '5 seconds',
+        //     'display_order' => 11,
+        //     'defaultChoice' => 0,
+        // ));
 
         $eventTypeId = $this->dbConnection->createCommand()
             ->select('id')
