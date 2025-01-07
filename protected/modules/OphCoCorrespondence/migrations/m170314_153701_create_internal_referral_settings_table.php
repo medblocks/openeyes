@@ -11,8 +11,8 @@ class m170314_153701_create_internal_referral_settings_table extends OEMigration
             'field_type_id' => 'int(10) unsigned NOT NULL',
             'key' =>  'varchar(64) NOT NULL',
             'name' => 'varchar(64) NOT NULL',
-            'data' =>  'varchar(4096) NOT NULL',
-            'default_value' =>  'varchar(64) NOT NULL',
+            'data' =>  'varchar(4096) NOT NULL DEFAULT ""',
+            'default_value' =>  'varchar(64) NOT NULL DEFAULT ""',
         ), $versioned = true);
 
         $this->addForeignKey('ophcocorrespondence_int_ref_set_field_type_id_fk', 'ophcocorrespondence_internal_referral_settings', 'field_type_id', 'setting_field_type', 'id');
@@ -54,25 +54,25 @@ class m170314_153701_create_internal_referral_settings_table extends OEMigration
             ->createCommand('SELECT * FROM setting_internal_referral WHERE `key` = "internal_referral_booking_address"')
             ->queryRow();
 
-        $address = Institution::model()->getCurrent()->name . "\r" . (implode("\r", Institution::model()->getCurrent()->getLetterAddress()));
-        if ($internal_referral_booking_address) {
-            $this->update(
-                'setting_internal_referral',
-                array(
-                    'value' => $address,
-                ),
-                'id = :id',
-                array(':id' => $internal_referral_booking_address['id'])
-            );
-        } else {
-            $this->insert(
-                'setting_internal_referral',
-                array(
-                    '`key`' => 'internal_referral_booking_address',
-                    'value' => $address,
-                )
-            );
-        }
+        // $address = Institution::model()->getCurrent()->name . "\r" . (implode("\r", Institution::model()->getCurrent()->getLetterAddress()));
+        // if ($internal_referral_booking_address) {
+        //     $this->update(
+        //         'setting_internal_referral',
+        //         array(
+        //             'value' => $address,
+        //         ),
+        //         'id = :id',
+        //         array(':id' => $internal_referral_booking_address['id'])
+        //     );
+        // } else {
+        //     $this->insert(
+        //         'setting_internal_referral',
+        //         array(
+        //             '`key`' => 'internal_referral_booking_address',
+        //             'value' => $address,
+        //         )
+        //     );
+        // }
 
         $this->insert('ophcocorrespondence_internal_referral_settings', array(
             'field_type_id' => 4,
@@ -91,7 +91,7 @@ class m170314_153701_create_internal_referral_settings_table extends OEMigration
                 array(':id' => $delivery_method_label->id)
             );
         } else {
-            $this->insert('setting_internal_referral', array('`key`' => 'internal_referral_method_label', 'value' => 'Electronic (WinDip)'));
+            // $this->insert('setting_internal_referral', array('`key`' => 'internal_referral_method_label', 'value' => 'Electronic (WinDip)'));
         }
     }
 
