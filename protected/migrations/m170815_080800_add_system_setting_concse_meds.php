@@ -9,7 +9,8 @@ class m170815_080800_add_system_setting_concse_meds extends CDbMigration
             'field_type_id' => 3,
             'key' => 'enable_concise_med_history',
             'name' => 'Require Dose/Freq for systemic meds',
-            'data' => serialize(array('on'=>'On', 'off'=>'Off'))
+            'data' => serialize(array('on'=>'On', 'off'=>'Off')),
+            'default_value' => 'off',
         ));
 
         $this->insert('setting_installation', array(
