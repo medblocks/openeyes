@@ -18,7 +18,7 @@ services:
     #   context: "../"
     #   dockerfile: "Dockerfile"
     ports:
-      - "8080:80"
+      - "8082:80"
     volumes:
       - ./db.conf:/etc/openeyes/db.conf
       - ./apache2.conf:/etc/apache2/sites-available/000-default.conf

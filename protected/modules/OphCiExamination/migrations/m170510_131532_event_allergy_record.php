@@ -25,7 +25,7 @@ class m170510_131532_event_allergy_record extends OEMigration
         );
         $this->update(
             'element_type',
-            array('default' => false),
+            array('default' => 0),
             'id = :eid',
             array(':eid' => $original_allergies_element_id)
         );
@@ -114,7 +114,7 @@ EOSQL
 select aa.id, latest.patient_id as patient_id, aa.allergy_id, aa.other, aa.comments, aa.last_modified_user_id,
 aa.last_modified_date,
 aa.created_user_id,
-aa.created_date from ophciexamination_allergy_entry as aa 
+aa.created_date from ophciexamination_allergy_entry as aa
 	join et_ophciexamination_allergies element on aa.element_id = element.id
 	join latest_allergy_examination_events latest on element.event_id = latest.event_id
 EOSQL
