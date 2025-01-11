@@ -8,11 +8,11 @@ class m171010_104800_add_more_colorvision_methods extends OEMigration
 
         # Check that these values do not already exist
         $is13 = $this->dbConnection->createCommand()->select('id')->from('ophciexamination_colourvision_method')->where('name = :name', array(':name' => 'Ishihara /13'))->queryRow();
-            $is17 = $this->dbConnection->createCommand()->select('id')->from('ophciexamination_colourvision_method')->where('name = :name', array(':name' => 'Ishihara /17'))->queryRow();
+        $is17 = $this->dbConnection->createCommand()->select('id')->from('ophciexamination_colourvision_method')->where('name = :name', array(':name' => 'Ishihara /17'))->queryRow();
         $is24 = $this->dbConnection->createCommand()->select('id')->from('ophciexamination_colourvision_method')->where('name = :name', array(':name' => 'Ishihara /24'))->queryRow();
 
         # Insert values if they don't already exist
-        if ($is13['id'] == '') {
+        if (empty($is13) || empty($is13['id'])) {
             $this->insert('ophciexamination_colourvision_method', array(
                           'name' => 'Ishihara /13',
                           'active' => '1',
@@ -32,7 +32,7 @@ class m171010_104800_add_more_colorvision_methods extends OEMigration
             }
         }
 
-        if ($is17['id'] == '') {
+        if (empty($is17) || empty($is17['id'])) {
             $this->insert('ophciexamination_colourvision_method', array(
                           'name' => 'Ishihara /17',
                           'active' => '1',
@@ -52,7 +52,7 @@ class m171010_104800_add_more_colorvision_methods extends OEMigration
             }
         }
 
-        if ($is24['id'] == '') {
+        if (empty($is24) || empty($is24['id'])) {
             $this->insert('ophciexamination_colourvision_method', array(
                           'name' => 'Ishihara /24',
                           'active' => '1',
