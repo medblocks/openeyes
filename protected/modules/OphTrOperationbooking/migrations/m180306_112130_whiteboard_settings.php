@@ -10,8 +10,8 @@ class m180306_112130_whiteboard_settings extends OEMigration
             'field_type_id' => 'int(10) unsigned NOT NULL',
             'key' =>  'varchar(64) NOT NULL',
             'name' => 'varchar(64) NOT NULL',
-            'data' =>  'varchar(4096) NOT NULL',
-            'default_value' =>  'varchar(64) NOT NULL',
+            'data' =>  'varchar(4096) NOT NULL default ""',
+            'default_value' =>  'varchar(64) NOT NULL default ""',
         ), $versioned = true);
 
         $this->addForeignKey('ophtroperationbooking_int_ref_set_field_type_id_fk', 'ophtroperationbooking_whiteboard_settings', 'field_type_id', 'setting_field_type', 'id');
